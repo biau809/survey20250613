@@ -1,6 +1,6 @@
 //const url='https://script.google.com/macros/s/AKfycbz3HOSI16ekKRuypFFRvTBQ91Lw0MTFEIBUjhYNxXKSOjR9tcabJmZQ9j8BLxpGBeiE2A/exec';
-const url='https://script.google.com/macros/s/AKfycbwMIGMnoMGwYV3nitmfMLYzTFuLzKa9kLcjl1l6MSIXo79xVShvTVBu9nIE7TEBdWL0pA/exec';
-
+//const url='https://script.google.com/macros/s/AKfycbwMIGMnoMGwYV3nitmfMLYzTFuLzKa9kLcjl1l6MSIXo79xVShvTVBu9nIE7TEBdWL0pA/exec';
+const url='https://script.google.com/macros/s/AKfycbze90ctNjl7Z1D319o_f_QzpY77vrwDAZuqQ26eVVzX8iGX_t2NCWdDj00SweEk90s8/exec';
 
            
 function QueryString(qStr){
@@ -42,6 +42,8 @@ function QueryString(qStr){
 	document.getElementById("ClassesPCAmount").innerHTML="";
 	document.getElementById("AffairPCAmount").innerHTML="";
 	document.getElementById("Projector").innerHTML="";
+	document.getElementById("BigDisplayer").innerHTML="";
+	document.getElementById("MobileDevice").innerHTML="";
     document.getElementById("CurrentAccount").innerHTML="";
 	document.getElementById("CapitalAccount").innerHTML="";
 	document.getElementById("SchAddress").innerHTML="";
@@ -65,9 +67,11 @@ function QueryString(qStr){
 	if ((data.Gde6StudentAmount)!==void 0)	document.getElementById("Grade6").innerHTML=`${data.Gde6StudentAmount}人`;  		   //帶入學校六年級學生總人數		
 	if ((data.ClassesPCAmount)!==void 0)	document.getElementById("ClassesPCAmount").innerHTML=`${data.ClassesPCAmount}台`;  		   //班級教室電腦數
 	if ((data.AffairPCAmount)!==void 0)	document.getElementById("AffairPCAmount").innerHTML=`${data.AffairPCAmount}台`;  		   //行政電腦數
-	if ((data.Projector)!==void 0)	document.getElementById("Projector").innerHTML=`${data.Projector}台`;  		   			   //單槍投影機數
-    if ((data.CurrentAccount)!==void 0)   document.getElementById("CurrentAccount").innerHTML=document.getElementById("CurrentAccount").innerHTML+`${data.CurrentAccount}%`;  		   //112年經常門經費百分比
-	if ((data.CapitalAccount)!==void 0)	document.getElementById("CapitalAccount").innerHTML=document.getElementById("CapitalAccount").innerHTML+`${data.CapitalAccount}%`;  		   //112年資本門經費百分比				
+	if ((data.Projector)!==void 0)	document.getElementById("Projector").innerHTML=`${data.Projector}台`;  		   			       //單槍投影機數
+	if ((data.Projector)!==void 0)	document.getElementById("BigDisplayer").innerHTML=`${data.BigDisplayer}台`;  		   			       //大型顯示器
+	if ((data.Projector)!==void 0)	document.getElementById("MobileDevice").innerHTML=`${data.MobileDevice}台`;  		   			       //行動載具數量
+    if ((data.CurrentAccount)!==void 0)   document.getElementById("CurrentAccount").innerHTML=document.getElementById("CurrentAccount").innerHTML+`${data.CurrentAccount}%`;  		   //113年經常門經費百分比
+	if ((data.CapitalAccount)!==void 0)	document.getElementById("CapitalAccount").innerHTML=document.getElementById("CapitalAccount").innerHTML+`${data.CapitalAccount}%`;  		   //113年資本門經費百分比				
 	if ((data.CapitalAccount)!==void 0)	document.getElementById("SchAddress").innerHTML=document.getElementById("SchAddress").innerHTML+`${data.SchoolAddress}`;  		                   //學校地址				
 
 		
