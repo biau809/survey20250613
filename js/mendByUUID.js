@@ -62,7 +62,7 @@ function QueryUUID(qStr){
 	
 	document.getElementById("AffairPCAmt").value=`${data.AffairPCAmount}`;  //帶入學校行政電腦數量
 	document.getElementById("ProjectorAmt").value=`${data.Projector}`;  //帶入投影機數量
-	document.getElementById("BigDisplayerAmt").value=`${data.TchingScreens}`;  //帶入學校大屏數量
+	document.getElementById("ClassTchingScreen").value=`${data.TchingScreens}`;  //帶入學校大屏數量
 	document.getElementById("MobileDeviceAmt").value=`${data.MobileDevice}`;  //帶入學校行動載具數量
 	
 	//document.getElementById("CurrentRation").value=`${data.CurrentAccount}`;  //帶入學校經常門比例
